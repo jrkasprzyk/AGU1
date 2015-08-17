@@ -5,8 +5,8 @@ do
 
 #SBATCH -J tjcLRGV$i 
 #SBATCH --time=5:00:00 
-#SBATCH -N 1
-#SBATCH --ntasks-per-node 5
+#SBATCH -N 5
+#SBATCH --ntasks-per-node 1
 #SBATCH -o tjcLRGV$i.out
 #SBATCH --qos janus-long
 
