@@ -1,5 +1,5 @@
 #!/bin/bash 
-Iteration=1
+Iteration=2
 Job=AGU${Iteration}
 
 for i in 1 4
