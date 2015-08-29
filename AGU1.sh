@@ -23,7 +23,9 @@ mkdir ${FILEBASE}_Out
 #-C E has been removed because "E" is the default and could have an effect on the 0 constraint run.
 
 # Command line for Borg MOEA
-for seed=(1..50)
+echo Scenario with ${i} constraint(s) begun
+
+for seed={1..50}
 do
 (./borg.exe -v 8 -o 6 -c ${i} -R ${FILEBASE}_Out/${FILEBASE}_runtime_s${seed}.txt \
 -F 5000 -f ${FILEBASE}_Out/${FILEBASE}_s1.txt -l 0,0,0,0.1,0,0,0,0 -u 1,1,1,0.4,3,3,3,3 \
@@ -33,7 +35,7 @@ do
 -c combined -r 5000) &
 
 #check to see which have begun
-echo optimization with $i constraint(s) and seed $seed has begun
+echo Seed ${seed} has begun
 
 done
 done
