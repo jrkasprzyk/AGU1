@@ -23,7 +23,7 @@ mkdir ${FILEBASE}_Out
 #-C E has been removed because "E" is the default and could have an effect on the 0 constraint run.
 
 # Command line for Borg MOEA
-echo Scenario with ${i} constraint(s) begun
+echo Scenario with ${i} constraints begun
 
 for seed={1..50}
 do
