@@ -2,7 +2,7 @@
 Iteration=1
 Job=AGU${Iteration}
 
-for i in (0 1 4)
+for i in 0 1 4
 do
 
 #SBATCH -J ${Job}
