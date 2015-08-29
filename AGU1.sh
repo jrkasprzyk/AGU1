@@ -25,7 +25,7 @@ mkdir ${FILEBASE}_Out
 # Command line for Borg MOEA
 echo Scenario with ${i} constraints begun
 
-for seed in (1..50)
+for seed in {1..50}
 do
 (./borg.exe -v 8 -o 6 -c ${i} -R ${FILEBASE}_Out/${FILEBASE}_runtime_s${seed}.txt \
 -F 5000 -f ${FILEBASE}_Out/${FILEBASE}_s1.txt -l 0,0,0,0.1,0,0,0,0 -u 1,1,1,0.4,3,3,3,3 \
