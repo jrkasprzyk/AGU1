@@ -73,8 +73,8 @@ Possible objectives: cost, surplus, critrel, drop, rel, cvar, numleases, drtrans
 <constraints_flag> 0
 # Format: constraint name [space] comparative [space] value
 # All constraints have been removed.
-<constraints_begin>
-<constraints_end>
+#<constraints_begin>
+#<constraints_end>
 
 Possible constraints: rel, critrel, cvar, 
 
